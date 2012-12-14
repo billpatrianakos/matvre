@@ -1,0 +1,26 @@
+/* SITE CREDITS: These humans made this site possible: */
+/* See http://humanstxt.org for more on this standard */
+
+
+/* TEAM */
+  <your title>: <your name>
+  Site:
+  Twitter:
+  Location:
+
+/* THANKS */
+  Names (& URL):
+
+/* SITE */
+  Standards: HTML5, CSS3
+  Components: jQuery, LESS, Fraction.less Boilerplate
+  Software:
+  Last updated: YYYY/MM/DD
+  Language:
+  Doctype: html
+
+
+
+
+   # Thanks for trying Fraction.less! Tell your friends about it!
+   # http://fractionless.info

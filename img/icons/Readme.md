@@ -1,0 +1,1 @@
+Put your site-wide icon sets in this folder.

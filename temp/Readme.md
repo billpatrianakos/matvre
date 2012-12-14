@@ -1,0 +1,3 @@
+Temporary files can go here. Things like images that need to be resized, files you're toying with, and generally things that you don't want mixed with your project code but are either useful references or will be integrated in some other form.
+
+I personally use a lot files like 'scratch.txt' as a kind of quick and dirty clipboard manager and I have a ton of images that I keep here. The images are usually large originals that I either have to resize, crop, or optimize in some way. The possibilities are endless and I think you'll find a use for this folder.

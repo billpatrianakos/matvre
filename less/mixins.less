@@ -1,0 +1,83 @@
+/*:::: MIXINS ::::*/
+
+.centered {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.centered-text {
+	text-align: center;
+}
+
+.border-radius (@radius: 10px) {
+	-moz-border-radius: @arguments;
+	-o-border-radius: @arguments;
+  -ms-border-radius: @arguments;
+  -khtml-border-radius: @arguments;
+	-webkit-border-radius: @arguments;
+	border-radius: @arguments;
+}
+
+.box-shadow (@x: 0, @y: 0, @blur: 5px, @color: #fff) {
+  -o-box-shadow: @arguments;
+  -moz-box-shadow: @arguments;
+  -ms-box-shadow: @arguments;
+  -khtml-box-shadow: @arguments;
+  -webkit-box-shadow: @arguments;
+  box-shadow: @arguments;
+}
+
+.inset-shadow (@inset: inset, @x: 0, @y: 0, @blur: 5px, @color: #fff) {
+  -o-box-shadow: @arguments;
+  -moz-box-shadow: @arguments;
+  -ms-box-shadow: @arguments;
+  -khtml-box-shadow: @arguments;
+  -webkit-box-shadow: @arguments;
+  box-shadow: @arguments;
+}
+
+.text-shadow (@x: 0, @y: 0, @blur: 1px, @color: #fff) {
+  -o-text-shadow: @arguments;
+  -moz-text-shadow: @arguments;
+  -ms-text-shadow: @arguments;
+  -khtml-text-shadow: @arguments;
+  -webkit-text-shadow: @arguments;
+  text-shadow: @arguments;
+}
+
+.top-borders (@radius: 6px) {
+  -moz-border-top-left-radius: @arguments;
+  -o-border-top-left-radius: @arguments;
+  -ms-border-top-left-radius: @arguments;
+  -khtml-border-top-left-radius: @arguments;
+  -webkit-border-top-left-radius: @arguments;
+  border-top-left-radius: @arguments;
+  -moz-border-top-right-radius: @arguments;
+  -o-border-top-right-radius: @arguments;
+  -ms-border-top-right-radius: @arguments;
+  -khtml-border-top-right-radius: @arguments;
+  -webkit-border-top-right-radius: @arguments;
+  border-top-right-radius: @arguments;
+}
+
+.bottom-borders (@radius: 6px) {
+  -moz-border-bottom-left-radius: @arguments;
+  -o-border-bottom-left-radius: @arguments;
+  -ms-border-bottom-left-radius: @arguments;
+  -khtml-border-bottom-left-radius: @arguments;
+  -webkit-border-bottom-left-radius: @arguments;
+  border-bottom-left-radius: @arguments;
+  -moz-border-bottom-right-radius: @arguments;
+  -o-border-bottom-right-radius: @arguments;
+  -ms-border-bottom-right-radius: @arguments;
+  -khtml-border-bottom-right-radius: @arguments;
+  -webkit-border-bottom-right-radius: @arguments;
+  border-bottom-right-radius: @arguments;
+}
+
+.transition-ease-in-out (@which: all, @time: 0.5s, @type: ease-in-out) {
+  -webkit-transition: @arguments;
+  -moz-transition: @arguments;
+  -o-transition: @arguments;
+  transition: @arguments;
+}

@@ -1,0 +1,1 @@
+All site-wide user interface images go here. Things like lightbox UI elements etc.
