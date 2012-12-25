@@ -281,7 +281,7 @@ body {
 }
 .row {
   width: 100%;
-  max-width: 980px;
+  max-width: 990px;
   min-width: 755px;
   margin: 0 auto;
   overflow: hidden;
@@ -375,9 +375,9 @@ h4,
 h5,
 h6 {
   position: relative;
-  font-family: Helvetica, Arial, sans-serif;
-  font-weight: bold;
-  color: #222222;
+  font-family: 'Edmondsans-Bold', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  color: #3e444d;
   -o-text-shadow: 0 1px 1px #f6f8fb;
   -moz-text-shadow: 0 1px 1px #f6f8fb;
   -ms-text-shadow: 0 1px 1px #f6f8fb;
@@ -407,17 +407,18 @@ pre,
 address,
 li,
 label {
-  font-size: 13px;
-  line-height: 18px;
+  font-size: 20px;
+  line-height: 1.5em;
   position: relative;
   top: 5px;
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: Fanwood, Georgia, 'Times New Roman', Times, serif;
   -o-text-shadow: 0 1px 1px #f6f8fb;
   -moz-text-shadow: 0 1px 1px #f6f8fb;
   -ms-text-shadow: 0 1px 1px #f6f8fb;
   -khtml-text-shadow: 0 1px 1px #f6f8fb;
   -webkit-text-shadow: 0 1px 1px #f6f8fb;
   text-shadow: 0 1px 1px #f6f8fb;
+  color: #3e444d;
 }
 h6 {
   font-size: 13px;
@@ -445,23 +446,24 @@ h1 {
 }
 a,
 a:visited {
-  color: #f6f8fb;
-  -o-text-shadow: 0 1px 1px #222222;
-  -moz-text-shadow: 0 1px 1px #222222;
-  -ms-text-shadow: 0 1px 1px #222222;
-  -khtml-text-shadow: 0 1px 1px #222222;
-  -webkit-text-shadow: 0 1px 1px #222222;
-  text-shadow: 0 1px 1px #222222;
+  color: #e77552;
+  -o-text-shadow: 0 1px 1px #f6f8fb;
+  -moz-text-shadow: 0 1px 1px #f6f8fb;
+  -ms-text-shadow: 0 1px 1px #f6f8fb;
+  -khtml-text-shadow: 0 1px 1px #f6f8fb;
+  -webkit-text-shadow: 0 1px 1px #f6f8fb;
+  text-shadow: 0 1px 1px #f6f8fb;
+  text-decoration: none;
 }
 a:focus,
 a:hover {
-  color: #222222;
-  -o-text-shadow: 0 1px 1px #222222;
-  -moz-text-shadow: 0 1px 1px #222222;
-  -ms-text-shadow: 0 1px 1px #222222;
-  -khtml-text-shadow: 0 1px 1px #222222;
-  -webkit-text-shadow: 0 1px 1px #222222;
-  text-shadow: 0 1px 1px #222222;
+  color: #3e444d;
+  -o-text-shadow: 0 1px 1px #f6f8fb;
+  -moz-text-shadow: 0 1px 1px #f6f8fb;
+  -ms-text-shadow: 0 1px 1px #f6f8fb;
+  -khtml-text-shadow: 0 1px 1px #f6f8fb;
+  -webkit-text-shadow: 0 1px 1px #f6f8fb;
+  text-shadow: 0 1px 1px #f6f8fb;
 }
 .secondary p {
   font-size: 14px;
@@ -1185,6 +1187,52 @@ ul.icons li .icon-large:before {
 .icon-user-md:before {
   content: "\f200";
 }
+/*:::: CUSTOM FONTS ::::*/
+@font-face {
+  font-family: 'Edmondsans';
+  src: url('../font/edmondsans-regular-webfont.eot');
+  src: url('../font/edmondsans-regular-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+   url('../font/edmondsans-regular-webfont.woff') format('woff'), /* Modern Browsers */
+   url('../font/edmondsans-regular-webfont.ttf') format('truetype'), /* Safari, Android, iOS */
+   url('../font/edmondsans-regular-webfont.svg#Edmondsans') format('svg');/* IE9 Compat Modes */
+  /* Legacy iOS */
+}
+@font-face {
+  font-family: 'Edmondsans-Medium';
+  src: url('../font/edmondsans-medium-webfont.eot');
+  src: url('../font/edmondsans-medium-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+   url('../font/edmondsans-medium-webfont.woff') format('woff'), /* Modern Browsers */
+   url('../font/edmondsans-medium-webfont.ttf') format('truetype'), /* Safari, Android, iOS */
+   url('../font/edmondsans-medium-webfont.svg#Edmondsans-Medium') format('svg');/* IE9 Compat Modes */
+  /* Legacy iOS */
+}
+@font-face {
+  font-family: 'Edmondsans-Bold';
+  src: url('../font/edmondsans-bold-webfont.eot');
+  src: url('../font/edmondsans-bold-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+   url('../font/edmondsans-bold-webfont.woff') format('woff'), /* Modern Browsers */
+   url('../font/edmondsans-bold-webfont.ttf') format('truetype'), /* Safari, Android, iOS */
+   url('../font/edmondsans-bold-webfont.svg#Edmondsans-Bold') format('svg');/* IE9 Compat Modes */
+  /* Legacy iOS */
+}
+@font-face {
+  font-family: 'Fanwood';
+  src: url('../font/fanwood-webfont.eot');
+  src: url('../font/fanwood-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+   url('../font/fanwood-webfont.woff') format('woff'), /* Modern Browsers */
+   url('../font/fanwood-webfont.ttf') format('truetype'), /* Safari, Android, iOS */
+   url('../font/fanwood-webfont.svg#fanwood') format('svg');/* IE9 Compat Modes */
+  /* Legacy iOS */
+}
+@font-face {
+  font-family: 'Fanwood-italic';
+  src: url('../font/fanwood_italic-webfont.eot');
+  src: url('../font/fanwood_italic-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+   url('../font/fanwood_italic-webfont.woff') format('woff'), /* Modern Browsers */
+   url('../font/fanwood_italic-webfont.ttf') format('truetype'), /* Safari, Android, iOS */
+   url('../font/fanwood_italic-webfont.svg#Fanwood-italic') format('svg');/* IE9 Compat Modes */
+  /* Legacy iOS */
+}
 /*:::: BUTTONS ::::*/
 /* For styling links as buttons */
 .link-button,
@@ -1236,6 +1284,90 @@ ul.icons li .icon-large:before {
 /**************************************\
 |* THE REST OF YOUR STYLES BELOW HERE *|
 \**************************************/
+body {
+  background: #f6f8fb;
+}
+header {
+  background: #3e444d;
+  -o-box-shadow: 0 1px 7px #222222;
+  -moz-box-shadow: 0 1px 7px #222222;
+  -ms-box-shadow: 0 1px 7px #222222;
+  -khtml-box-shadow: 0 1px 7px #222222;
+  -webkit-box-shadow: 0 1px 7px #222222;
+  box-shadow: 0 1px 7px #222222;
+}
+header h1#title {
+  font-family: 'Edmondsans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 21px;
+  color: #f6f8fb;
+  -o-text-shadow: 0 1px 1px #3e444d;
+  -moz-text-shadow: 0 1px 1px #3e444d;
+  -ms-text-shadow: 0 1px 1px #3e444d;
+  -khtml-text-shadow: 0 1px 1px #3e444d;
+  -webkit-text-shadow: 0 1px 1px #3e444d;
+  text-shadow: 0 1px 1px #3e444d;
+  margin-bottom: 0;
+}
+nav {
+  font-family: Edmondsans, 'Helvetica Neue', Helvetica, 'Droid Sans', Arial, sans-serif;
+}
+nav ul {
+  font-family: inherit;
+  float: right;
+  list-style: none;
+  margin-top: 10px;
+}
+nav ul li {
+  font-family: inherit;
+  display: inline;
+  font-size: 16px;
+  margin-left: 18px;
+}
+nav ul li a,
+nav ul li a:visited {
+  color: #f6f8fb;
+  -o-text-shadow: 0 1px 1px #222222;
+  -moz-text-shadow: 0 1px 1px #222222;
+  -ms-text-shadow: 0 1px 1px #222222;
+  -khtml-text-shadow: 0 1px 1px #222222;
+  -webkit-text-shadow: 0 1px 1px #222222;
+  text-shadow: 0 1px 1px #222222;
+  border-bottom: none;
+}
+nav ul li a:hover {
+  color: #e77552;
+  -o-text-shadow: 0 1px 1px #3e444d;
+  -moz-text-shadow: 0 1px 1px #3e444d;
+  -ms-text-shadow: 0 1px 1px #3e444d;
+  -khtml-text-shadow: 0 1px 1px #3e444d;
+  -webkit-text-shadow: 0 1px 1px #3e444d;
+  text-shadow: 0 1px 1px #3e444d;
+}
+#main-container {
+  margin-top: 40px;
+}
+#main-container #content .post-date {
+  font-family: Fanwood-italic, Edmondsans-Medium, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  margin-top: 0;
+  top: 0;
+}
+#main-container #asides {
+  margin-top: 130px;
+}
+aside h1,
+aside h2,
+aside h3,
+aside h4,
+aside h5,
+aside h6 {
+  font-family: Edmondsans-Bold, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  margin-bottom: 0;
+}
+aside p {
+  font-family: Edmondsans, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 14px;
+}
 /*:::: HELPER CLASSES ::::*/
 /*
  * Define your styles first. Add media queries below these helpers.
@@ -1344,12 +1476,12 @@ ul.icons li .icon-large:before {
 /*@media handheld, only screen and (max-width: 767px) {
 
 	body {
-		
+
 	}
 
 }*/
 /* Hi-Res images for iPhone4 */
-/*@media only screen and (-webkit-min-device-pixel-ratio: 2) { 
+/*@media only screen and (-webkit-min-device-pixel-ratio: 2) {
 
 /*	.logo {
 		background: url(logo2x.jpg) no-repeat;

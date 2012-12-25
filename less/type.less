@@ -6,9 +6,9 @@ h1:first-child, h2:first-child, h3:first-child, h4:first-child {
 
 h1, h2, h3, h4, h5, h6 {
   position: relative;
-  font-family: Helvetica, Arial, sans-serif;
-	font-weight: bold;
-	color: @black;
+  font-family: 'Edmondsans-Bold', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-weight: normal;
+	color: @ltblack;
 	.text-shadow(0, 1px, 1px, @white);
 }
 
@@ -16,24 +16,23 @@ h1, h2, h3, h4 {
   margin-top: 18px;
 }
 
-h3, h4, h5, h6 { 
+h3, h4, h5, h6 {
   line-height: 18px;
 }
 
 h1, h2 {
-  line-height: 36px; 
+  line-height: 36px;
   margin-bottom: 18px;
 }
 
-
-
 p, pre, address, li, label {
-  font-size: 13px;
-  line-height: 18px;
+  font-size: 20px;
+  line-height: 1.5em;
   position: relative;
   top: 5px;
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: Fanwood, Georgia, 'Times New Roman', Times, serif;
   .text-shadow(0, 1px, 1px, @white);
+  color: @ltblack;
 }
 
 h6 {
@@ -67,13 +66,14 @@ h1 {
 }
 
 a, a:visited {
-  color: @white;
-  .text-shadow(0, 1px, 1px, @black);
+  color: @orange;
+  .text-shadow(0, 1px, 1px, @white);
+  text-decoration: none;
 }
 
 a:focus, a:hover {
-  color: @black;
-  .text-shadow(0, 1px, 1px, @black);
+  color: @ltblack;
+  .text-shadow(0, 1px, 1px, @white);
 }
 
 .secondary p {

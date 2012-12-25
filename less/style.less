@@ -23,6 +23,7 @@
 /* Typography */
 @import url('type.less');
 @import url('font-awesome.less');
+@import url('fonts.less');
 
 /*:::: BUTTONS ::::*/
 
@@ -53,7 +54,7 @@ label {
 
 /* TEXT AREAS - normal, focus, hover */
 textarea {
-  
+
 }
 
 textarea:focus {
@@ -70,19 +71,19 @@ select {
 
 /* TEXT INPUTS - normal, focus, active, hover */
 input[type=text], input[type=email], input[type=password] {
-  
+
 }
 
 input[type=text]:focus, input[type=email]:focus, input[type=password]:focus {
-  
+
 }
 
 input[type=text]:active, input[type=email]:active, input[type=password]:active {
-  
+
 }
 
 input[type=text]:hover, input[type=email]:hover, input[type=password]:hover {
-  
+
 }
 
 /* CHECK BOXES - normal, focus, active, hover */
@@ -104,19 +105,19 @@ input[type=checkbox]:hover {
 
 /* SUBMIT & REGULAR BUTTONS - normal, focus, active, hover */
 input[type=submit], button {
-  
+
 }
 
 input[type=submit]:focus, button:focus {
-  
+
 }
 
 input[type=submit]:active, button:active {
-  
+
 }
 
 input[type=submit]:hover, button:hover {
-  
+
 }
 
 
@@ -124,13 +125,72 @@ input[type=submit]:hover, button:hover {
 |* THE REST OF YOUR STYLES BELOW HERE *|
 \**************************************/
 
+body {
+	background: @white;
+}
 
+header {
+	background: @ltblack;
+	.box-shadow(0, 1px, 7px, @black);
+	& h1#title {
+	  font-family: 'Edmondsans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	  font-size: 21px;
+	  color: @white;
+	  .text-shadow(0, 1px, 1px, @ltblack);
+	  margin-bottom: 0;
+	}
+}
 
+nav {
+  font-family: Edmondsans, 'Helvetica Neue', Helvetica, 'Droid Sans', Arial, sans-serif;
+  & ul {
+	font-family: inherit;
+	float: right;
+	list-style: none;
+	margin-top: 10px;
+	& li {
+	  font-family: inherit;
+	  display: inline;
+	  font-size: 16px;
+	  margin-left: 18px;
+	  & a, a:visited {
+		color: @white;
+		.text-shadow(0, 1px, 1px, @black);
+		border-bottom: none;
+	  }
+	  & a:hover {
+		color: @orange;
+		.text-shadow(0, 1px, 1px, @ltblack);
+	  }
+	}
+  }
+}
 
+#main-container {
+	margin-top: 40px;
+	& #content {
+		& .post-date {
+			font-family: Fanwood-italic, Edmondsans-Medium, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+			font-size: 18px;
+			margin-top: 0;
+			top: 0;
+		}
+	}
+	& #asides {
+		margin-top: 130px;
+	}
+}
 
-
-
-
+aside {
+	& h1, h2, h3, h4, h5, h6 {
+		font-family: Edmondsans-Bold, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+		margin-bottom: 0;
+	}
+	& p {
+		font-family: Edmondsans, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+		font-size: 14px;
+	}
+}
 
 
 
@@ -149,19 +209,19 @@ input[type=submit]:hover, button:hover {
 /* For image replacement */
 .ir { display: block; border: 0; text-indent: -999em; overflow: hidden; background-color: transparent; background-repeat: no-repeat; text-align: left; direction: ltr; }
 .ir br { display: none; }
- 
+
 /* Hidden from browsers and screen readers */
 .hidden { display: none !important; visibility: hidden; }
- 
+
 /*  Hidden visibly but available to screenreaders. Same as .hidden but good for accessibility */
 .visuallyhidden { border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; }
- 
+
 /* Extends .visually hidden to allow element to be focusable when using the keyboard */
 .visuallyhidden.focusable:active, .visuallyhidden.focusable:focus { clip: auto; height: auto; margin: 0; overflow: visible; position: static; width: auto; }
- 
+
 /* Hide visually and from screenreaders, but maintain layout. Think of it as having an element match the background - looks hidden but affects other elements. Cannot be highlighted */
 .invisible { visibility: hidden; }
- 
+
 /* Contain floats: h5bp.com/q This is a godsend in many cases */
 .clearfix:before, .clearfix:after { content: ""; display: table; }
 .clearfix:after { clear: both; }
@@ -177,7 +237,7 @@ input[type=submit]:hover, button:hover {
 	font-size: 0.8em;
 	line-height: 1.5em;
 	}
-	
+
 	}
 
 
@@ -189,7 +249,7 @@ input[type=submit]:hover, button:hover {
 	font-size: 16px;
 	-webkit-text-size-adjust: none;
 	}
-	
+
 	.row, body, .container {
 	width: 100%;
 	min-width: 0;
@@ -198,7 +258,7 @@ input[type=submit]:hover, button:hover {
 	padding-left: 0px;
 	padding-right: 0px;
 	}
-	
+
 	.row .one, .row .two, .row .three, .row .four, .row .five, .row .six, .row .seven, .row .eight, .row .nine, .row .ten, .row .eleven, .row .twelve {
 	width: auto;
 	float: none;
@@ -217,7 +277,7 @@ input[type=submit]:hover, button:hover {
 /*@media handheld, only screen and (max-width: 767px) {
 
 	body {
-		
+
 	}
 
 }*/
@@ -225,7 +285,7 @@ input[type=submit]:hover, button:hover {
 
 /* Hi-Res images for iPhone4 */
 
-/*@media only screen and (-webkit-min-device-pixel-ratio: 2) { 
+/*@media only screen and (-webkit-min-device-pixel-ratio: 2) {
 
 /*	.logo {
 		background: url(logo2x.jpg) no-repeat;
