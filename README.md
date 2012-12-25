@@ -10,7 +10,13 @@ Mature is an open source blog theme not tied to any one CMS or framework (that m
 
 3. Hack it and jimmy it into Wordpress.
 
-__Octopress users:__ Send an email to bill@writeapp.me and I'll give you access to a fully functional (yes, drag and drop) Octopress version.
+__Octopress users:__ The `octopress` folder contains the code to install Matvre as an Octopress theme. Some customization *may* be required but here's how to do it:
+
+1. Rename folder to 'matvre'
+2. Drop the folder into your Octopress theme's folder located at `octopress_install/.themes` so the full path should be `/path/to/octopress/.themes/matvre`
+3. In your Octopress folder run `rake install['matvre']`
+
+The theme will then install and you're all set. Just set up your Octopress settings how you like and make any content changes as necessary (some data may be hardcoded in the theme that you may not want).
 
 ## Why?
 
@@ -22,4 +28,4 @@ When it's done Matvre will be the official theme of all [Write.app blogs](https:
 
 ## License
 
-BSD. Use it. Free.
+BSD. Use it. Free. Sell it, that's fine. Just give me credit somewhere (preferably in the form of a link).
