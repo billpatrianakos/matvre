@@ -569,10 +569,22 @@ a:hover {
   border: 1px solid #222222;
 }
 /*:::: FORMS ::::*/
-/* TEXT AREAS - normal, focus, hover */
-/* TEXT INPUTS - normal, focus, active, hover */
-/* CHECK BOXES - normal, focus, active, hover */
-/* SUBMIT & REGULAR BUTTONS - normal, focus, active, hover */
+button,
+input[type=submit] {
+  background: #3e444d;
+  -moz-border-radius: 3px;
+  -o-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -khtml-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  font-family: Edmondsans, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #f6f8fb;
+  font-size: 16px;
+  border: none;
+  padding: 6px 12px;
+  margin-top: 10px;
+}
 /**************************************\
 |* THE REST OF YOUR STYLES BELOW HERE *|
 \**************************************/
@@ -657,9 +669,99 @@ aside h6 {
   font-family: Edmondsans-Bold, 'Helvetica Neue', Helvetica, Arial, sans-serif;
   margin-bottom: 0;
 }
-aside p {
+aside p,
+aside label,
+aside li {
   font-family: Edmondsans, 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 14px;
+}
+#pre-footer {
+  background: #e77552;
+  margin-top: 20px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+#pre-footer h3 {
+  color: #f6f8fb;
+  -o-text-shadow: 0 1px 1px #e77552;
+  -moz-text-shadow: 0 1px 1px #e77552;
+  -ms-text-shadow: 0 1px 1px #e77552;
+  -khtml-text-shadow: 0 1px 1px #e77552;
+  -webkit-text-shadow: 0 1px 1px #e77552;
+  text-shadow: 0 1px 1px #e77552;
+}
+#pre-footer p,
+#pre-footer label {
+  -o-text-shadow: 0 1px 1px #e77552;
+  -moz-text-shadow: 0 1px 1px #e77552;
+  -ms-text-shadow: 0 1px 1px #e77552;
+  -khtml-text-shadow: 0 1px 1px #e77552;
+  -webkit-text-shadow: 0 1px 1px #e77552;
+  text-shadow: 0 1px 1px #e77552;
+  color: #222222;
+}
+#pre-footer a,
+#pre-footer a:visited {
+  color: #f6f8fb;
+  -o-text-shadow: 0 1px 1px #e77552;
+  -moz-text-shadow: 0 1px 1px #e77552;
+  -ms-text-shadow: 0 1px 1px #e77552;
+  -khtml-text-shadow: 0 1px 1px #e77552;
+  -webkit-text-shadow: 0 1px 1px #e77552;
+  text-shadow: 0 1px 1px #e77552;
+}
+#pre-footer a:hover {
+  color: #3e444d;
+}
+#pre-footer ul {
+  list-style: none;
+  padding: 0;
+}
+#pre-footer ul li {
+  margin-bottom: 10px;
+}
+#pre-footer ul li a,
+#pre-footer ul li a:visited {
+  color: #f6f8fb;
+  -o-text-shadow: 0 1px 1px #e77552;
+  -moz-text-shadow: 0 1px 1px #e77552;
+  -ms-text-shadow: 0 1px 1px #e77552;
+  -khtml-text-shadow: 0 1px 1px #e77552;
+  -webkit-text-shadow: 0 1px 1px #e77552;
+  text-shadow: 0 1px 1px #e77552;
+}
+#pre-footer ul li a:hover {
+  color: #3e444d;
+}
+#gh_repos li p {
+  margin-top: 0;
+  top: 0;
+}
+footer nav ul {
+  margin-top: 25px !important;
+}
+footer nav ul li {
+  font-family: Fanwood, Georgia, 'Times New Roman', Times, serif;
+}
+footer nav ul li a,
+footer nav ul li a:visited {
+  color: #3e444d;
+  font-size: 14px;
+  -o-text-shadow: 0 1px 1px #f6f8fb;
+  -moz-text-shadow: 0 1px 1px #f6f8fb;
+  -ms-text-shadow: 0 1px 1px #f6f8fb;
+  -khtml-text-shadow: 0 1px 1px #f6f8fb;
+  -webkit-text-shadow: 0 1px 1px #f6f8fb;
+  text-shadow: 0 1px 1px #f6f8fb;
+}
+footer nav ul li a:hover {
+  color: #e77552;
+  -o-text-shadow: 0 1px 1px #f6f8fb;
+  -moz-text-shadow: 0 1px 1px #f6f8fb;
+  -ms-text-shadow: 0 1px 1px #f6f8fb;
+  -khtml-text-shadow: 0 1px 1px #f6f8fb;
+  -webkit-text-shadow: 0 1px 1px #f6f8fb;
+  text-shadow: 0 1px 1px #f6f8fb;
 }
 /*:::: HELPER CLASSES ::::*/
 /*

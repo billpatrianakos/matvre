@@ -48,76 +48,15 @@
 
 /*:::: FORMS ::::*/
 
-label {
-
-}
-
-/* TEXT AREAS - normal, focus, hover */
-textarea {
-
-}
-
-textarea:focus {
-
-}
-
-textarea:hover {
-
-}
-
-select {
-
-}
-
-/* TEXT INPUTS - normal, focus, active, hover */
-input[type=text], input[type=email], input[type=password] {
-
-}
-
-input[type=text]:focus, input[type=email]:focus, input[type=password]:focus {
-
-}
-
-input[type=text]:active, input[type=email]:active, input[type=password]:active {
-
-}
-
-input[type=text]:hover, input[type=email]:hover, input[type=password]:hover {
-
-}
-
-/* CHECK BOXES - normal, focus, active, hover */
-input[type=checkbox] {
-
-}
-
-input[type=checkbox]:focus {
-
-}
-
-input[type=checkbox]:active {
-
-}
-
-input[type=checkbox]:hover {
-
-}
-
-/* SUBMIT & REGULAR BUTTONS - normal, focus, active, hover */
-input[type=submit], button {
-
-}
-
-input[type=submit]:focus, button:focus {
-
-}
-
-input[type=submit]:active, button:active {
-
-}
-
-input[type=submit]:hover, button:hover {
-
+button, input[type=submit] {
+	background: @ltblack;
+	.border-radius(3px);
+	font-family: Edmondsans, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	color: @white;
+	font-size: 16px;
+	border: none;
+	padding: 6px 12px;
+	margin-top: 10px;
 }
 
 
@@ -187,15 +126,72 @@ aside {
 		font-family: Edmondsans-Bold, 'Helvetica Neue', Helvetica, Arial, sans-serif;
 		margin-bottom: 0;
 	}
-	& p {
+	& p, label, li {
 		font-family: Edmondsans, 'Helvetica Neue', Helvetica, Arial, sans-serif;
 		font-size: 14px;
 	}
 }
 
+#pre-footer {
+	background: @orange;
+	margin-top: 20px;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	& h3 {
+		color: @white;
+		.text-shadow(0, 1px, 1px, @orange);
+	}
+	& p, label {
+		.text-shadow(0, 1px, 1px, @orange);
+		color: @black;
+	}
+	& a, a:visited {
+		color: @white;
+		.text-shadow(0, 1px, 1px, @orange);
+	}
+	& a:hover {
+		color: @ltblack;
+	}
+	& ul {
+		list-style: none;
+		padding: 0;
+		& li {
+			margin-bottom: 10px;
+			& a, a:visited {
+				color: @white;
+				.text-shadow(0, 1px, 1px, @orange);
+			}
+			& a:hover {
+				color: @ltblack;
+			}
+		}
+	}
+}
 
+#gh_repos {
+	& li p {
+		margin-top: 0;
+		top: 0;
+	}
+}
 
-
+footer {
+	& nav ul {
+		margin-top: 25px !important;
+	}
+	& nav ul li {
+		font-family: Fanwood, Georgia, 'Times New Roman', Times, serif;
+		& a, a:visited {
+			color: @ltblack;
+			font-size: 14px;
+			.text-shadow(0, 1px, 1px, @white);
+		}
+		& a:hover {
+			color: @orange;
+			.text-shadow(0, 1px, 1px, @white);
+		}
+	}
+}
 
 
 
