@@ -801,43 +801,43 @@ a:focus, a:hover {
   font-family: 'Edmondsans';
   src: url("../font/edmondsans-regular-webfont.eot");
   /* IE9 Compat Modes */
-  src: url("../font/edmondsans-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../font/edmondsans-regular-webfont.woff") format("woff"), url("../font/edmondsans-regular-webfont.ttf") format("truetype"), url("../font/edmondsans-regular-webfont.svg#Edmondsans") format("svg");
-  /* Legacy iOS */ }
+  src: url("../font/edmondsans-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../font/edmondsans-regular-webfont.svg#edmondsans_regularregular") format("svg"), url("../font/edmondsans-regular-webfont.woff") format("woff"), url("../font/edmondsans-regular-webfont.ttf") format("truetype");
+  /* Safari, Android, iOS */ }
 
 @font-face {
   font-family: 'Edmondsans-Medium';
   src: url("../font/edmondsans-medium-webfont.eot");
   /* IE9 Compat Modes */
-  src: url("../font/edmondsans-medium-webfont.eot?#iefix") format("embedded-opentype"), url("../font/edmondsans-medium-webfont.woff") format("woff"), url("../font/edmondsans-medium-webfont.ttf") format("truetype"), url("../font/edmondsans-medium-webfont.svg#Edmondsans-Medium") format("svg");
-  /* Legacy iOS */ }
+  src: url("../font/edmondsans-medium-webfont.eot?#iefix") format("embedded-opentype"), url("../font/edmondsans-medium-webfont.svg#edmondsans_mediumregular") format("svg"), url("../font/edmondsans-medium-webfont.woff") format("woff"), url("../font/edmondsans-medium-webfont.ttf") format("truetype");
+  /* Safari, Android, iOS */ }
 
 @font-face {
   font-family: 'Edmondsans-Bold';
   src: url("../font/edmondsans-bold-webfont.eot");
   /* IE9 Compat Modes */
-  src: url("../font/edmondsans-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../font/edmondsans-bold-webfont.woff") format("woff"), url("../font/edmondsans-bold-webfont.ttf") format("truetype"), url("../font/edmondsans-bold-webfont.svg#Edmondsans-Bold") format("svg");
-  /* Legacy iOS */ }
+  src: url("../font/edmondsans-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../font/edmondsans-bold-webfont.svg#edmondsans_boldregular") format("svg"), url("../font/edmondsans-bold-webfont.woff") format("woff"), url("../font/edmondsans-bold-webfont.ttf") format("truetype");
+  /* Safari, Android, iOS */ }
 
 @font-face {
   font-family: 'Fanwood';
   src: url("../font/fanwood-webfont.eot");
   /* IE9 Compat Modes */
-  src: url("../font/fanwood-webfont.eot?#iefix") format("embedded-opentype"), url("../font/fanwood-webfont.woff") format("woff"), url("../font/fanwood-webfont.ttf") format("truetype"), url("../font/fanwood-webfont.svg#fanwood") format("svg");
-  /* Legacy iOS */ }
+  src: url("../font/fanwood-webfont.eot?#iefix") format("embedded-opentype"), url("../font/fanwood-webfont.svg#FanwoodRegular") format("svg"), url("../font/fanwood-webfont.woff") format("woff"), url("../font/fanwood-webfont.ttf") format("truetype");
+  /* Safari, Android, iOS */ }
 
 @font-face {
   font-family: 'Fanwood-italic';
   src: url("../font/fanwood_italic-webfont.eot");
   /* IE9 Compat Modes */
-  src: url("../font/fanwood_italic-webfont.eot?#iefix") format("embedded-opentype"), url("../font/fanwood_italic-webfont.woff") format("woff"), url("../font/fanwood_italic-webfont.ttf") format("truetype"), url("../font/fanwood_italic-webfont.svg#Fanwood-italic") format("svg");
-  /* Legacy iOS */ }
+  src: url("../font/fanwood_italic-webfont.eot?#iefix") format("embedded-opentype"), url("../font/fanwood_italic-webfont.svg#FanwoodItalic") format("svg"), url("../font/fanwood_italic-webfont.woff") format("woff"), url("../font/fanwood_italic-webfont.ttf") format("truetype");
+  /* Safari, Android, iOS */ }
 
 @font-face {
   font-family: 'SourceCodePro';
   src: url("../font/SourceCodePro-Regular-webfont.eot");
   /* IE9 Compat Modes */
-  src: url("../font/SourceCodePro-Regular-webfont.eot?#iefix") format("embedded-opentype"), url("../font/SourceCodePro-Regular-webfont.woff") format("woff"), url("../font/SourceCodePro-Regular-webfont.ttf") format("truetype"), url("../font/SourceCodePro-Regular-webfont.svg#SourceCodePro") format("svg");
-  /* Legacy iOS */ }
+  src: url("../font/SourceCodePro-Regular-webfont.eot?#iefix") format("embedded-opentype"), url("../font/SourceCodePro-Regular-webfont.svg#SourceCodeProRegular") format("svg"), url("../font/SourceCodePro-Regular-webfont.woff") format("woff"), url("../font/SourceCodePro-Regular-webfont.ttf") format("truetype");
+  /* Safari, Android, iOS */ }
 
 /*:::: BUTTONS ::::*/
 /*:::: FORMS ::::*/
@@ -918,6 +918,79 @@ aside h1, aside h2, aside h3, aside h4, aside h5, aside h6 {
 aside p {
   font-family: Edmondsans, 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 14px; }
+
+#pre-footer {
+  background: #e77552;
+  margin-top: 20px;
+  padding-top: 40px;
+  padding-bottom: 40px; }
+  #pre-footer h3 {
+    color: #f6f8fb;
+    -o-text-shadow: 0, 1px, 1px, #e77552;
+    -moz-text-shadow: 0, 1px, 1px, #e77552;
+    -ms-text-shadow: 0, 1px, 1px, #e77552;
+    -khtml-text-shadow: 0, 1px, 1px, #e77552;
+    -webkit-text-shadow: 0, 1px, 1px, #e77552;
+    text-shadow: 0, 1px, 1px, #e77552; }
+  #pre-footer p, #pre-footer label {
+    -o-text-shadow: 0, 1px, 1px, #e77552;
+    -moz-text-shadow: 0, 1px, 1px, #e77552;
+    -ms-text-shadow: 0, 1px, 1px, #e77552;
+    -khtml-text-shadow: 0, 1px, 1px, #e77552;
+    -webkit-text-shadow: 0, 1px, 1px, #e77552;
+    text-shadow: 0, 1px, 1px, #e77552;
+    color: #222222; }
+  #pre-footer a, #pre-footer a:visited {
+    color: #f6f8fb;
+    -o-text-shadow: 0, 1px, 1px, #e77552;
+    -moz-text-shadow: 0, 1px, 1px, #e77552;
+    -ms-text-shadow: 0, 1px, 1px, #e77552;
+    -khtml-text-shadow: 0, 1px, 1px, #e77552;
+    -webkit-text-shadow: 0, 1px, 1px, #e77552;
+    text-shadow: 0, 1px, 1px, #e77552; }
+  #pre-footer a:hover {
+    color: #3e444d; }
+  #pre-footer ul {
+    list-style: none;
+    padding: 0; }
+    #pre-footer ul li {
+      margin-bottom: 10px; }
+      #pre-footer ul li a, #pre-footer ul li a:visited {
+        color: #f6f8fb;
+        -o-text-shadow: 0, 1px, 1px, #e77552;
+        -moz-text-shadow: 0, 1px, 1px, #e77552;
+        -ms-text-shadow: 0, 1px, 1px, #e77552;
+        -khtml-text-shadow: 0, 1px, 1px, #e77552;
+        -webkit-text-shadow: 0, 1px, 1px, #e77552;
+        text-shadow: 0, 1px, 1px, #e77552; }
+      #pre-footer ul li a:hover {
+        color: #3e444d; }
+
+#gh_repos li p {
+  margin-top: 0;
+  top: 0; }
+
+footer nav ul {
+  margin-top: 25px !important; }
+footer nav ul li {
+  font-family: Fanwood, Georgia, 'Times New Roman', Times, serif; }
+  footer nav ul li a, footer nav ul li a:visited {
+    color: #3e444d;
+    font-size: 14px;
+    -o-text-shadow: 0, 1px, 1px, #f6f8fb;
+    -moz-text-shadow: 0, 1px, 1px, #f6f8fb;
+    -ms-text-shadow: 0, 1px, 1px, #f6f8fb;
+    -khtml-text-shadow: 0, 1px, 1px, #f6f8fb;
+    -webkit-text-shadow: 0, 1px, 1px, #f6f8fb;
+    text-shadow: 0, 1px, 1px, #f6f8fb; }
+  footer nav ul li a:hover {
+    color: #e77552;
+    -o-text-shadow: 0, 1px, 1px, #f6f8fb;
+    -moz-text-shadow: 0, 1px, 1px, #f6f8fb;
+    -ms-text-shadow: 0, 1px, 1px, #f6f8fb;
+    -khtml-text-shadow: 0, 1px, 1px, #f6f8fb;
+    -webkit-text-shadow: 0, 1px, 1px, #f6f8fb;
+    text-shadow: 0, 1px, 1px, #f6f8fb; }
 
 /*:::: HELPER CLASSES ::::*/
 /*

@@ -27,7 +27,16 @@
 
 /*:::: BUTTONS ::::*/
 
-
+button, input[type=submit] {
+	background: $ltblack;
+	@include border-radius(3px);
+	font-family: Edmondsans, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	color: $white !important;
+	font-size: 16px;
+	border: none;
+	padding: 6px 12px;
+	margin-top: 10px;
+}
 
 /*:::: FORMS ::::*/
 
@@ -115,10 +124,10 @@ body {
 header {
 	background: $ltblack;
 	@include box-shadow(0, 1px, 7px, $black);
-	& h1#title {
+	& h1#title, a#title-link, a#title-link:visited {
 	  font-family: 'Edmondsans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	  font-size: 21px;
-	  color: $white;
+	  color: $white !important;
 	  @include text-shadow(0, 1px, 1px, $ltblack);
 	  margin-bottom: 0;
 	  top: 10px;
@@ -170,15 +179,100 @@ aside {
 		font-family: Edmondsans-Bold, 'Helvetica Neue', Helvetica, Arial, sans-serif;
 		margin-bottom: 0;
 	}
-	& p {
+	& p, li, label {
 		font-family: Edmondsans, 'Helvetica Neue', Helvetica, Arial, sans-serif;
 		font-size: 14px;
 	}
 }
 
+#pre-footer {
+	background: $orange;
+	margin-top: 20px;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	& h3 {
+		color: $white;
+		@include text-shadow(0, 1px, 1px, $orange);
+	}
+	& p, label {
+		@include text-shadow(0, 1px, 1px, $orange);
+		color: $black;
+	}
+	& a, a:visited {
+		color: $white;
+		@include text-shadow(0, 1px, 1px, $orange);
+	}
+	& a:hover {
+		color: $ltblack;
+	}
+	& ul {
+		list-style: none;
+		padding: 0;
+		& li {
+			font-family: Edmondsans, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+			font-size: 14px;
+			margin-bottom: 10px;
+			& a, a:visited {
+				font-family: Edmondsans, 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
+				font-size: 14px;
+				color: $white;
+				@include text-shadow(0, 1px, 1px, $orange);
+			}
+			& a:hover {
+				color: $ltblack;
+			}
+		}
+	}
+}
 
+#gh_repos {
+	& li p {
+		margin-top: 0;
+		top: 0;
+	}
+}
 
+ul#recent_posts {
+	list-style: none;
+	padding: 0;
+	& li {
+		font-family: Edmondsans, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+		font-size: 14px;
+		margin-bottom: 10px;
+		& a, a:visited {
+			font-family: Edmondsans, 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
+			font-size: 14px;
+			color: $white;
+			@include text-shadow(0, 1px, 1px, $orange);
+		}
+		& a:hover {
+			color: $ltblack;
+		}
+	}
+}
 
+footer {
+	& nav ul {
+		margin-top: 25px !important;
+	}
+	& nav ul li {
+		font-family: Fanwood, Georgia, 'Times New Roman', Times, serif;
+		& a, a:visited {
+			color: $ltblack;
+			font-size: 14px;
+			@include text-shadow(0, 1px, 1px, $white);
+		}
+		& a:hover {
+			color: $orange;
+			@include text-shadow(0, 1px, 1px, $white);
+		}
+	}
+}
+
+pre, code {
+	font-family: SourceCodePro, Menlo, Inconsolata, monospace !important;
+	font-size: 14px !important;
+}
 
 
 

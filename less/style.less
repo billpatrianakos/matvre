@@ -74,7 +74,7 @@ header {
 	& h1#title {
 	  font-family: 'Edmondsans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	  font-size: 21px;
-	  color: @white;
+	  color: @white !important;
 	  .text-shadow(0, 1px, 1px, @ltblack);
 	  margin-bottom: 0;
 	  top: 10px;
@@ -126,7 +126,7 @@ aside {
 		font-family: Edmondsans-Bold, 'Helvetica Neue', Helvetica, Arial, sans-serif;
 		margin-bottom: 0;
 	}
-	& p, label, li {
+	& p, label, li, label, a {
 		font-family: Edmondsans, 'Helvetica Neue', Helvetica, Arial, sans-serif;
 		font-size: 14px;
 	}
@@ -157,7 +157,10 @@ aside {
 		padding: 0;
 		& li {
 			margin-bottom: 10px;
+			font-family: Edmondsans, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+			font-size: 14px;
 			& a, a:visited {
+				font-family: Edmondsans, 'Helvetica Neue', Helvetica, Arial, sans-serif;
 				color: @white;
 				.text-shadow(0, 1px, 1px, @orange);
 			}
@@ -174,6 +177,24 @@ aside {
 		top: 0;
 	}
 }
+
+ul#recent_posts {
+		list-style: none;
+		padding: 0;
+		& li.post {
+			margin-bottom: 10px;
+			font-family: Edmondsans, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+			font-size: 14px;
+			& a, a:visited {
+				font-family: Edmondsans, 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
+				color: @white;
+				.text-shadow(0, 1px, 1px, @orange);
+			}
+			& a:hover {
+				color: @ltblack;
+			}
+		}
+	}
 
 footer {
 	& nav ul {

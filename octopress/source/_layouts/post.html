@@ -2,9 +2,9 @@
 layout: default
 single: true
 ---
-  <div class="eight">
+  <div id="content" class="nine">
     {% include article.html %}
-      <p class="meta">
+      <p class="post-date">
         {% include post/author.html %}
         {% include post/date.html %}{% if updated %}{{ updated }}{% else %}{{ time }}{% endif %}
         {% include post/categories.html %}
@@ -30,7 +30,7 @@ single: true
      {% endif %}
   </div>
   {% unless page.sidebar == false %}
-  <aside class="four last">
+  <aside class="three last">
     {% if site.post_asides.size %}
       {% include_array post_asides %}
     {% else %}
