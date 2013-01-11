@@ -2,6 +2,7 @@
 
 $black: #222222;
 $ltblack: #3E444D;
+$text: #333332;
 $white: #F6F8FB;
 $orange: #E77552;
 $link-color: #E77552;
@@ -63,6 +64,7 @@ $pre-border: darken($base02, 5) !default;
 $pre-color: $base1 !default;
 
 $noise-bg: image-url('noise.png') top left !default;
+$mono: SourceCodePro, Menlo, Monaco, "Andale Mono", "lucida console", "Courier New", monospace !default;
 
 /* Syntax Hilighting */
 .highlight, html .gist .gist-file .gist-syntax .gist-highlight {
@@ -172,7 +174,7 @@ p, li {
   }
   pre code { font-size: 14px !important; background: none; border: none; }
 }
-$mono: SourceCodePro, Menlo, Monaco, "Andale Mono", "lucida console", "Courier New", monospace !default;
+
 .pre-code {
   //@include selection(adjust-color($base03, $lightness: 23%, $saturation: -65%), $text-shadow: $base03 0 1px);
   font-family: $mono !important;
@@ -299,7 +301,7 @@ figure.code {
   font-weight: normal;
   margin-bottom: 0;
   @include top-borders(5px);
-  font-family: "Helvetica Neue", Arial, "Lucida Grande", "Lucida Sans Unicode", Lucida, sans-serif;
+  font-family: Edmondsans, "Helvetica Neue", Arial, "Lucida Grande", "Lucida Sans Unicode", Lucida, sans-serif;
   background: #aaaaaa image-url("code_bg.png") top repeat-x;
   border: 1px solid #565656;
   border-top-color: #cbcbcb;

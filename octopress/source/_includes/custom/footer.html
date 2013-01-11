@@ -6,7 +6,7 @@
 					<ul id="recent_posts">
 						{% for post in site.posts limit: site.recent_posts %}
 						<li class="post">
-							<a href="{{ root_url }}{{ post.url }}">{{ post.title }}</a>
+							<p><a href="{{ root_url }}{{ post.url }}">{{ post.title }}</a></p>
 						</li>
 						{% endfor %}
 					</ul>
@@ -42,7 +42,7 @@
 				    <li class="loading repo">Status updating...</li>
 				  </ul>
 				  {% if site.github_show_profile_link %}
-				  <a href="https://github.com/{{site.github_user}}">@{{site.github_user}}</a> on GitHub
+				  <p><a href="https://github.com/{{site.github_user}}">@{{site.github_user}}</a> on GitHub</p>
 				  {% endif %}
 				  <script type="text/javascript">
 				    $.domReady(function(){
@@ -93,7 +93,7 @@
 					<li><a href="{{ root_url }}/">Blog</a></li>
 					<li><a href="{{ root_url }}/about">About</a></li>
 					<li><a href="{{ root_url }}/projects">Projects</a></li>
-					<li><a href="{{ root_url }}/archives">Archive</a></li>
+					<li><a href="{{ root_url }}/blog/archives">Archive</a></li>
 				</ul>
 			</nav>
 		</section>

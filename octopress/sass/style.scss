@@ -22,7 +22,7 @@
 
 /* Typography */
 @import "type";
-@import url('font-awesome.css');
+//@import url('font-awesome.css');
 @import "fonts";
 
 /*:::: BUTTONS ::::*/
@@ -36,80 +36,6 @@ button, input[type=submit] {
 	border: none;
 	padding: 6px 12px;
 	margin-top: 10px;
-}
-
-/*:::: FORMS ::::*/
-
-label {
-
-}
-
-/* TEXT AREAS - normal, focus, hover */
-textarea {
-
-}
-
-textarea:focus {
-
-}
-
-textarea:hover {
-
-}
-
-select {
-
-}
-
-/* TEXT INPUTS - normal, focus, active, hover */
-input[type=text], input[type=email], input[type=password] {
-
-}
-
-input[type=text]:focus, input[type=email]:focus, input[type=password]:focus {
-
-}
-
-input[type=text]:active, input[type=email]:active, input[type=password]:active {
-
-}
-
-input[type=text]:hover, input[type=email]:hover, input[type=password]:hover {
-
-}
-
-/* CHECK BOXES - normal, focus, active, hover */
-input[type=checkbox] {
-
-}
-
-input[type=checkbox]:focus {
-
-}
-
-input[type=checkbox]:active {
-
-}
-
-input[type=checkbox]:hover {
-
-}
-
-/* SUBMIT & REGULAR BUTTONS - normal, focus, active, hover */
-input[type=submit], button {
-
-}
-
-input[type=submit]:focus, button:focus {
-
-}
-
-input[type=submit]:active, button:active {
-
-}
-
-input[type=submit]:hover, button:hover {
-
 }
 
 
@@ -166,7 +92,17 @@ nav {
 			font-family: Fanwood-italic, Edmondsans-Medium, 'Helvetica Neue', Helvetica, Arial, sans-serif;
 			font-size: 18px;
 			margin-top: 0;
+			margin-bottom: 0;
 			top: 0;
+		}
+		& .post-container {
+			margin-bottom: 80px;
+			& .post-title a, .post-title a:visited {
+				color: $ltblack !important;
+			}
+			& .post-title a:hover {
+				color: $orange !important;
+			}
 		}
 	}
 	& #asides {
@@ -274,9 +210,50 @@ pre, code {
 	font-size: 14px !important;
 }
 
+/*:::: Somewhat special classes and small bug fixes (or hacks ::::*/
 
+a.read-more {
+	@include border-radius(3px);
+	padding: 10px 16px;
+	font-family: 'Edmondsans-Medium', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	background: $orange;
+	color: $white;
+}
 
+a.read-more:hover {
+	background: $ltblack;
+}
 
+#comments {
+	display: block;
+	clear: both;
+}
+
+p.meta {
+	display: block;
+	clear: both;
+}
+
+.pagination {
+	display: block;
+	margin-top: 40px;
+	& a, a:visited {
+		font-family: 'Edmondsans-Medium', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	}
+	& a.prev {
+		float: left;
+	}
+	& a.next {
+		float: right;
+		position: relative;
+		bottom: 19px;
+	}
+}
+
+.archive-link {
+	display: block;
+	text-align: center;
+}
 
 /*:::: HELPER CLASSES ::::*/
 

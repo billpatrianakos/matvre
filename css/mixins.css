@@ -1,3 +1,8 @@
 /*:::: MIXINS ::::*/
-.centered{margin-left:auto;margin-right:auto}.centered-text{text-align:center}
-/* This beautiful CSS-File has been crafted with LESS (lesscss.org) and compiled by simpLESS (wearekiss.com/simpless) */
+.centered {
+  margin-left: auto;
+  margin-right: auto;
+}
+.centered-text {
+  text-align: center;
+}

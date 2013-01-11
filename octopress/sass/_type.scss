@@ -35,6 +35,18 @@ p, pre, address, li, label {
   color: $ltblack;
 }
 
+#content {
+  & p, li, label {
+    color: $text !important;
+  }
+  .entry-content {
+    color: $text;
+    & p, li, label {
+      color: $text !important;
+    }
+  }
+}
+
 h6 {
   font-size: 13px;
   top: 5px
